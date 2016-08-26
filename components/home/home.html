@@ -1,0 +1,158 @@
+
+<div class="wxc-head wxc-opcity">
+    <div class="wxc-head-hd">
+        <div class="wxc-icon wxc-logo"><img src="./static/images/wxc-logo.png" alt=""></div>
+    </div>
+    <div class="wxc-head-bd wxc-cell-primary">
+        <div class="wxc-position-eit" ng-model="homePosition.cityName">{{ homePosition.cityName }}</div>
+    </div>
+    <div class="wxc-head-ft">
+        <i class="wxc-icon"><img src="./static/images/wxc-icon-circum-b.png" alt=""></i>
+    </div>
+</div>
+<!-- banner -->
+<div class="slide banner">
+    <div class="slide-box">
+        <div class="sMain" ng-repeat="x in bannerData" ng-init="homeIsEnd($last)"><img ng-src={{x.bannerImg}} alt=""></div>
+    </div>
+    <ul class="slide-item">
+        <li ng-repeat="x in bannerData" ng-init="homeIsEnd($last)"></li>
+    </ul>
+</div>
+<div class="wxc-home-nav wxc-contents">
+    <div class="wxc-nav-box">
+        <i class="wxc-icon"><img src="./static/images/wxc-icon-home-navOne-hot.png" alt=""></i>
+        <p>绿色安心</p>
+    </div>
+    <div class="wxc-nav-box">
+        <i class="wxc-icon"><img src="./static/images/wxc-icon-home-navTow-hot.png" alt=""></i>
+        <p>即装即住</p>
+    </div>
+    <div class="wxc-nav-box">
+        <i class="wxc-icon"><img src="./static/images/wxc-icon-home-navThree-hot.png" alt=""></i>
+        <p>个性定制</p>
+    </div>
+    <div class="wxc-nav-box">
+        <i class="wxc-icon"><img src="./static/images/wxc-icon-home-navFore-hot.png" alt=""></i>
+        <p>高性价比</p>
+    </div>
+</div>
+<div class="wxc-product">
+    <div class="wxc-product-head">
+        <div class="wxc-product-info">
+            <h3 class="wxc-product-title">超值无醛套餐</h3>
+            <p class="wxc-product-describe">全屋无醛装修，即装即住，全家安心</p>
+        </div>
+    </div>
+    <div class="wxc-product-box" ng-repeat="x in homeProduct">
+        <div class="wxc-product-main">
+            <img ng-src={{x.productImg}} alt="">
+            <div class="wxc-product-price">
+                <p>¥<span>{{x.productPrice}}</span>／m²</p>
+            </div>
+        </div>
+        <div class="wxc-product-info">
+            <h3 class="wxc-product-title">{{x.productTitle}}</h3>
+            <p class="wxc-product-describe">{{x.productDescribe}}</p>
+        </div>
+    </div>
+    <div class="wxc-product-box">
+        <div class="wxc-product-main">
+            <img src="./static/images/wxc-product-img.png" alt="">
+            <div class="wxc-product-price">
+                <p>¥<span>699</span>／m²</p>
+            </div>
+        </div>
+        <div class="wxc-product-info">
+            <h3 class="wxc-product-title">超值无醛套餐</h3>
+            <p class="wxc-product-describe">全屋无醛装修，即装即住，全家安心</p>
+        </div>
+    </div>
+    <div class="wxc-product-box">
+        <div class="wxc-product-main">
+            <img src="./static/images/wxc-product-img.png" alt="">
+            <div class="wxc-product-price">
+                <p>¥<span>699</span>／m²</p>
+            </div>
+        </div>
+        <div class="wxc-product-info">
+            <h3 class="wxc-product-title">超值无醛套餐</h3>
+            <p class="wxc-product-describe">全屋无醛装修，即装即住，全家安心</p>
+        </div>
+    </div>
+</div>
+<div class="wxc-homeReg">
+    <div class="wxc-product-info">
+        <h3 class="wxc-homeReg-title">10秒预约，免费获取无醛家装方案</h3>
+        <p class="wxc-product-describe">认真填写装修需求，匹配适合您的装修方案</p>
+    </div>
+    <div class="leftMax-cells">
+        <div class="wxc-form-cell">
+            <div class="wxc-cell-bd wxc-cell-primary">
+                <input class="wxc-input" type="text" ng-model="homeReg.userName" placeholder="请输入您的姓名">
+            </div>
+        </div>
+        <div class="wxc-form-cell">
+            <div class="wxc-cell-bd wxc-cell-primary ">
+                <input class="wxc-input" type="text" ng-model="homeReg.userTel" placeholder="输入您的手机号">
+            </div>
+        </div>
+        <div class="wxc-form-cell wxc-cell-or">
+            <div class="wxc-cell-primary">
+                <input class="wxc-input" type="text" ng-model="homeReg.userRegion" placeholder="省／市">
+            </div>
+            <div class="wxc-cell-mar"></div>
+            <div class="wxc-cell-primary">
+                <input class="wxc-input" type="text" ng-model="homeReg.userCity" placeholder="市／地区">
+            </div>
+        </div>
+    </div>
+    <div class="wxc-btn-area">
+        <a class="wxc-btn wxc-btn-success wxc-btn-block" href="javascript:" id="showTooltips">免费申请</a>
+    </div>
+    <p class="wxc-font-hint wxc-homeReg-hint wxc-text-center">已有 <span class="wxc-text-hint">{{homeReg.userNum}}</span>人得到了满意的设计方案</p>
+</div>
+<div class="wxc-icon-list-content wxc-contents">
+    <div class="wxc-content">
+        <div class="wxc-content-bd">
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listOne.png" alt=""></i>
+                <p class="wxc-font-text-min">绿色安心</p>
+                <p class="wxc-font-min-hint">源自自然，绿色安全</p>
+            </div>
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listTow.png" alt=""></i>
+                <p class="wxc-font-text-min">即装即住</p>
+                <p class="wxc-font-min-hint">0甲醛释放，装完即住</p>
+            </div>
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listThree.png" alt=""></i>
+                <p class="wxc-font-text-min">个性定制</p>
+                <p class="wxc-font-min-hint">在线DIY，任性发挥</p>
+            </div>
+        </div>
+        <div class="wxc-content-bd">
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listFore.png" alt=""></i>
+                <p class="wxc-font-text-min">高性价比</p>
+                <p class="wxc-font-min-hint">一线品牌，厂家直达</p>
+            </div>
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listFive.png" alt=""></i>
+                <p class="wxc-font-text-min">极速响应</p>
+                <p class="wxc-font-min-hint">智能制造，本地化供应</p>
+            </div>
+            <div class="wxc-icon-list-box">
+                <i class="wxc-icon"><img src="./static/images/wxc-icon-home-listSix.png" alt=""></i>
+                <p class="wxc-font-text-min">人机直通</p>
+                <p class="wxc-font-min-hint">全程管控，一键跟踪</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wxc-footer">
+    <p class="wxc-text-center wxc-font-hint">© Copyrights 2016 Skong Technology Co., Ltd.</p>
+    <p class="wxc-text-center wxc-font-hint">京B2-20150072号 </p>
+</div>
+<router-footer></router-footer>
+

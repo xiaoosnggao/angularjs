@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设计师详情</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body>
+
+<div class="main-vh designerInfo contents-list">
+    <div class="designer-user-box">
+        <div class="skongwx-user-box-con">
+            <div class="skongwx-user-box-smn skongwx-user-box">
+                <div class="skongwx-user-headPortrait">
+                    <img src="images/icon-user-toux.png" alt="">
+                </div>
+                <div class="skongwx-user-info">
+                    <p class="skongwx-user-name">刘忻了 <i class="skongwx-icon skongwx-icon-man"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-box">
+                <div class="sMain">
+                    <div class="gxs-cell-bd skongwx-designer-info">
+                        <div class="skongwx-designer-info-box">
+                            <p class="font-hint">所在地</p>
+                            <p class="skongwx-designer-strong">北京</p>
+                        </div>
+                        <div class="skongwx-designer-info-box">
+                            <p class="font-hint">作品</p>
+                            <p class="skongwx-designer-strong">22</p>
+                        </div>
+                        <div class="skongwx-designer-info-box">
+                            <p class="font-hint">粉丝</p>
+                            <p class="skongwx-designer-strong">356</p>
+                        </div>
+                    </div>
+                    <div class="designer-user-btn">
+                        <button type="button" class="btn designer-user-box-btn">私信</button>
+                        <button type="button" class="btn designer-user-box-btn">+关注</button>
+                    </div>
+                </div>
+                <div class="sMain"><p class="designer-user-box-text">设计不仅仅是图纸，还要有思想、有创造，要求新、求异、求变、求不同，否则设计不能称之为设计。</p></div>
+            </div>
+            <ul class="slide-item">
+                <li class="cur"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="box-content designer-user-ev">
+            <div class="gxs-cell-bd gxs-cell-primary">
+                <i class="skongwx-icon skongwx-icon-grade cur"></i>
+                <i class="skongwx-icon skongwx-icon-grade cur"></i>
+                <i class="skongwx-icon skongwx-icon-grade cur"></i>
+                <i class="skongwx-icon skongwx-icon-grade cur"></i>
+                <i class="skongwx-icon skongwx-icon-grade"></i>
+                4.8
+            </div>
+            <div class="gxs-cell-ft">
+                <a href="">查看评价</a>
+            </div>
+        </div>
+        <div class="gxs-cells designer-user-info">
+            <div class="gxs-cell">
+                <div class="gxs-cell-primary text-center">
+                    <p class="font-min-info">擅长风格：简欧、田园、中式</p>
+                    <p class="font-min-info">所属机构：北京埃森设计工作室</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="designer-contents product-contents">
+        <div class="skongwx-product">
+            <div class="skongwx-product-box">
+                <div class="skongwx-product-main">
+                    <img src="images/product-img.png" alt="">
+                </div>
+                <div class="skongwx-product-ft">
+                    <div class="skongwx-product-ft-primary">
+                        <h3>欧式简约望京花园田园话题</h3>
+                        <p>一居室 45㎡</p>
+                    </div>
+                    <div class="skongwx-product-ft-zan">
+                        <i class="skongwx-icon"></i>
+                        <p>1232</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skongwx-product-box">
+                <div class="skongwx-product-main">
+                    <img src="images/product-img.png" alt="">
+                </div>
+                <div class="skongwx-product-ft">
+                    <div class="skongwx-product-ft-primary">
+                        <h3>欧式简约望京花园田园话题</h3>
+                        <p>一居室 45㎡</p>
+                    </div>
+                    <div class="skongwx-product-ft-zan">
+                        <i class="skongwx-icon hot"></i>
+                        <p>1232</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skongwx-copyright-bg"></div>
+    <div class="skongwx-btn-default">
+        <button class="gxs-btn btn-success gxs-btn-block" type="button">请他设计</button>
+    </div>
+</div>
+<script>
+
+
+    Slider.newClass({
+        slide: document.querySelector(".slide"),
+        item: 0,
+        switch: false
+    });
+
+</script>
+</body>
+</html>
