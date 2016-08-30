@@ -32,6 +32,30 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'userContent'
         })
 
+        .when('/myOrder', {//我的订单
+            templateUrl: './components/myOrder/myOrder.html',
+            controller: 'myOrder'
+        })
+        .when('/backlog', {//待办事项
+            templateUrl: './components/backlog/backlog.html',
+            controller: 'backlog'
+        })
+
+        .when('/focusCollection', {//收藏关注
+            templateUrl: './components/focusCollection/focusCollection.html',
+            controller: 'focusCollection'
+        })
+
+        .when('/privateMessage', {//私信
+            templateUrl: './components/privateMessage/privateMessage.html',
+            controller: 'privateMessage'
+        })
+
+        .when('/systemMessage', {//系统消息
+            templateUrl: './components/systemMessage/systemMessage.html',
+            controller: 'systemMessage'
+        })
+
         .otherwise({redirectTo: '/'});
 }]);
 
@@ -198,6 +222,37 @@ app.controller('tribal', function ($scope) {
 app.controller('userContent', function ($scope) {
     $scope.$on('$viewContentLoaded', function () {
 
+    });
+
+});
+
+//我的订单
+app.controller('myOrder', function ($scope) {
+    $scope.$on('$viewContentLoaded', function () {
+
+    });
+
+});
+
+//待办事项
+app.controller('backlog', function ($scope) {
+    $scope.$on('$viewContentLoaded', function () {
+
+    });
+
+});
+
+//私信
+app.controller('privateMessage', function ($scope) {
+    $scope.$on('$viewContentLoaded', function () {
+        inputClear()
+    });
+
+});
+
+//系统消息
+app.controller('systemMessage', function ($scope) {
+    $scope.$on('$viewContentLoaded', function () {
     });
 
 });

@@ -28,11 +28,11 @@ $.fn.sKongHeadSelect = function (option) {
             $(this).parent().fadeOut(200);
         }
     });
-    $(option.eleL ).on("click", function () {
+    $(option.eleL).on("click", function () {
         $(option.eleShowL).fadeIn(200).append(html).siblings(".wxc-alert-dg").fadeOut(200).find(".wxc-mask").remove();
     });
     $(option.eleR).on("click", function () {
-        $( option.eleShowR).fadeIn(200).append(html).siblings(".wxc-alert-dg").fadeOut(200).find(".wxc-mask").remove();
+        $(option.eleShowR).fadeIn(200).append(html).siblings(".wxc-alert-dg").fadeOut(200).find(".wxc-mask").remove();
     });
     $(option.eleR).on("click", function () {
         $(option.eleShowR).fadeIn(200).siblings(".wxc-alert-dg").fadeOut(200);
@@ -59,7 +59,7 @@ $.fn.sKongHeadSelect = function (option) {
 };
 
 //input 清空内容
-$(function () {
+function inputClear() {
     $(".wxc-cells-input").find(".wxc-input").on("keyup", function () {
         var ele = $(this).siblings(".wxc-icon-close");
         var seachIcon = $(this).siblings(".wxc-icon-seach");
@@ -87,6 +87,9 @@ $(function () {
             seachBtn.fadeOut(200);
         }
     });
+}
+$(function () {
+    inputClear()
 });
 
 $(function () {
@@ -105,7 +108,7 @@ $(function () {
         }
         $(".wxc-dialog").fadeIn(200);
     });
-    $(".default").on("click",function(){
+    $(".default").on("click", function () {
         $(".wxc-mask").fadeOut(100);
         $(".wxc-dialog").fadeOut(200);
     })
